@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641141866403336" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTPQ4EM2TL"></script>
     <script>
@@ -14,7 +14,6 @@
         gtag('js', new Date());
 
         gtag('config', 'G-LTPQ4EM2TL');
-
     </script>
 
     <meta charset="utf-8">
@@ -87,7 +86,6 @@
         !window.EQUALLY_AI_API_KEY && (window.EQUALLY_AI_API_KEY = "HUEjaXltfIEVyLgfE3kO", intervalId = setInterval(function() {
             window.EquallyAi && (clearInterval(intervalId), window.EquallyAi = new EquallyAi)
         }, 500));
-
     </script>
 
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=zJWb4A6g"></script>

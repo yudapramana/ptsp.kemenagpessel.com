@@ -13,7 +13,6 @@
         gtag('js', new Date());
 
         gtag('config', 'G-LTPQ4EM2TL');
-
     </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -64,6 +63,8 @@
 
     <meta name="google-site-verification" content="L2cqB0zMI-5ZcuG_lEwKsOfrKOt7MbkYxUq6y5jcUf0" />
 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641141866403336" crossorigin="anonymous"></script>
+
     <style>
         #header {
             top: 0px !important;
@@ -73,7 +74,6 @@
             background: url('/anyar-assets/img/landing-kmg.jpeg') top center !important;
             background-size: cover !important;
         }
-
     </style>
 
     <!-- =======================================================
@@ -262,37 +262,37 @@
                         <div class="accordion" id="accordionExample">
 
                             @foreach ($units as $key => $unit)
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $unit->id_unit_pengolah }}" aria-expanded="false" aria-controls="collapse-{{ $unit->id_unit_pengolah }}">
-                                        {{ $unit->name }}
-                                    </button>
-                                </h2>
-                                <div id="collapse-{{ $unit->id_unit_pengolah }}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
-                                    <div class="accordion-body">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $unit->id_unit_pengolah }}" aria-expanded="false" aria-controls="collapse-{{ $unit->id_unit_pengolah }}">
+                                            {{ $unit->name }}
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-{{ $unit->id_unit_pengolah }}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                        <div class="accordion-body">
 
-                                        <ul class="list-group">
-                                            @forelse ($unit->layanan as $layanan)
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                {{ $layanan->name }}
-                                                <div>
+                                            <ul class="list-group">
+                                                @forelse ($unit->layanan as $layanan)
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        {{ $layanan->name }}
+                                                        <div>
 
 
-                                                    {{-- <a href="/lihat-syarat/{{ $layanan->id_layanan }}" class="badge bg-secondary">Lihat Syarat</a> --}}
+                                                            {{-- <a href="/lihat-syarat/{{ $layanan->id_layanan }}" class="badge bg-secondary">Lihat Syarat</a> --}}
 
-                                                    <a id="lihat-syarat" data-id_layanan="{{ $layanan->id_layanan }}" data-nama_layanan="{{ $layanan->name }}" class="badge bg-secondary" type="button" data-bs-toggle="modal" data-bs-target="#fModal" data-title="Lihat Syarat Layanan">Lihat Syarat</a>
-                                                    <a href="{{ route('landing.buat-pelayanan', $layanan->idx_layanan) }}" class="badge bg-primary">Buat Permohonan</a>
-                                                </div>
-                                            </li>
+                                                            <a id="lihat-syarat" data-id_layanan="{{ $layanan->id_layanan }}" data-nama_layanan="{{ $layanan->name }}" class="badge bg-secondary" type="button" data-bs-toggle="modal" data-bs-target="#fModal" data-title="Lihat Syarat Layanan">Lihat Syarat</a>
+                                                            <a href="{{ route('landing.buat-pelayanan', $layanan->idx_layanan) }}" class="badge bg-primary">Buat Permohonan</a>
+                                                        </div>
+                                                    </li>
 
-                                            @empty
-                                            .: Belum Ada Layanan Terdaftar :.
-                                            @endforelse
-                                        </ul>
+                                                @empty
+                                                    .: Belum Ada Layanan Terdaftar :.
+                                                @endforelse
+                                            </ul>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             @endforeach
 
 
@@ -518,9 +518,9 @@
     <script>
         function fetchSyarat(id_layanan) {
             $.ajax({
-                url: "/syarat-layanan/list/fetch/" + id_layanan
-                , type: 'GET'
-                , success: function(res) {
+                url: "/syarat-layanan/list/fetch/" + id_layanan,
+                type: 'GET',
+                success: function(res) {
                     var box = $('.syarat-layanan-box');
                     box.empty();
                     console.log(res);
@@ -553,7 +553,6 @@
 
             fetchSyarat(idLayanan);
         });
-
     </script>
 
     <script defer>
@@ -568,7 +567,6 @@
         !window.EQUALLY_AI_API_KEY && (window.EQUALLY_AI_API_KEY = "HUEjaXltfIEVyLgfE3kO", intervalId = setInterval(function() {
             window.EquallyAi && (clearInterval(intervalId), window.EquallyAi = new EquallyAi)
         }, 500));
-
     </script>
 
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=zJWb4A6g"></script>
