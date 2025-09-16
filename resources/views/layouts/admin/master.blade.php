@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641141866403336" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTPQ4EM2TL"></script>
     <script>
@@ -13,7 +14,6 @@
         gtag('js', new Date());
 
         gtag('config', 'G-LTPQ4EM2TL');
-
     </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -50,7 +50,6 @@
         $(document).ready(function() {
             $('.preloader').addClass('out');
         });
-
     </script>
 
     @yield('_scripts')
@@ -61,10 +60,10 @@
 
         const swalWithBootstrapButtons = Swal.mixin({
             customClass: {
-                confirmButton: 'btn btn-success px-3 mx-3'
-                , cancelButton: 'btn btn-danger px-3 mx-3'
-            }
-            , buttonsStyling: false
+                confirmButton: 'btn btn-success px-3 mx-3',
+                cancelButton: 'btn btn-danger px-3 mx-3'
+            },
+            buttonsStyling: false
         });
 
 
@@ -80,11 +79,11 @@
                 // });
 
                 Swal.fire({
-                    title: 'Sesi anda sudah kadaluwarsa, sistem akan mengarahkan anda ke halaman login?'
-                    , showDenyButton: false
-                    , showCancelButton: false
-                    , confirmButtonText: 'Oke'
-                , }).then((result) => {
+                    title: 'Sesi anda sudah kadaluwarsa, sistem akan mengarahkan anda ke halaman login?',
+                    showDenyButton: false,
+                    showCancelButton: false,
+                    confirmButtonText: 'Oke',
+                }).then((result) => {
                     /* Read more about isConfirmed, isDenied below */
                     if (result.isConfirmed) {
                         window.location = '/login';
@@ -93,7 +92,6 @@
 
             }
         });
-
     </script>
 
 </body>
