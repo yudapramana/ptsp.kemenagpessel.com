@@ -56,7 +56,6 @@ class HomeController extends Controller
     {
         $access_type = DB::table('access_type')->first();
         $type = $access_type->name;
-        $type = 'MINIMAL';
 
         $statusPelayanan = [];
         $statusPelayanan = [
