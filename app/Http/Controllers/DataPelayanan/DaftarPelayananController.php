@@ -173,10 +173,14 @@ class DaftarPelayananController extends Controller
 
     public function create()
     {
+        $access_type = DB::table('access_type')->first();
+        $type = $access_type->name;
         $daftarLayanan = \App\Models\DaftarLayanan::all();
+        
         // $daftarLayanan = DaftarLayanan::whereHas('syarat')->get();
         return view('admin.daftar-pelayanan.create', [
             'title'  => 'Input - Lacak Pelayanan Publik',
+            'type' => $type,
             'br1'  => 'Input - Lacak',
             'br2'  => 'Daftar Pelayanan Publik',
             'daftar_layanan'  => $daftarLayanan

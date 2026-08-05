@@ -59,10 +59,11 @@
                                         <a id="inputButton" class="btn btn-primary mr-2" data-bs-toggle="collapse" href="#inputSection" role="button" aria-expanded="false" aria-controls="inputSection" data-bs-target=".input-collapse">
                                             Tambah Pelayanan
                                         </a>
-
-                                        <a id="simpleButton" class="btn btn-secondary" data-bs-toggle="collapse" href="#inputSimpleSection" role="button" aria-expanded="false" aria-controls="inputSimpleSection" data-bs-target=".input-collapse">
-                                            Tambah Simple
-                                        </a>
+                                        @if ($type == 'MINIMAL')
+                                            <a id="simpleButton" class="btn btn-secondary" data-bs-toggle="collapse" href="#inputSimpleSection" role="button" aria-expanded="false" aria-controls="inputSimpleSection" data-bs-target=".input-collapse">
+                                                Tambah Simple
+                                            </a>
+                                        @endif
                                     </div>
                                 </div>
 
